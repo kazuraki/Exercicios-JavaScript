@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
     <script>
 
         // Exercicio 2 - Condicionais
-        
+
         //Exercicio 2.1 = Exiba o maior numero
         /*
         var num1 = prompt("Escreva um numero: ")
@@ -66,6 +67,53 @@
         }*/
 
         // Exercicio 2.5 = Leia 6 valores, exiba todos e calcule a média aritmética.
+        /*
+        let num1 = parseFloat(prompt("Escreva um numero: "));
+        let num2 = parseFloat(prompt("Escreva um numero: "));
+        let num3 = parseFloat(prompt("Escreva um numero: "));
+        let num4 = parseFloat(prompt("Escreva um numero: "));
+        let num5 = parseFloat(prompt("Escreva um numero: "));
+        let num6 = parseFloat(prompt("Escreva um numero: "));
+
+        let resultado = parseFloat();
+
+        resultado = (num1 + num2 + num3 + num4 + num5 + num6)/6
+        alert(resultado);
+        */
+
+        //Exercicio 2.6 = Leia 4 valores diferentes e informe apenas o primeiro, o último e o maior deles.
+        /*
+        let num1 = parseInt(prompt("Escreva um numero: "));
+        let num2 = parseInt(prompt("Escreva um numero: "));
+        let num3 = parseInt(prompt("Escreva um numero: "));
+        let num4 = parseInt(prompt("Escreva um numero: "));
+
+        alert("O numero " + num1 + " foi seu primeiro digitado");
+        alert("O numero " + num4 + " foi seu ultimo digitado");
+
+        if(num1 > num2 && num1 > num3 && num1 > num4){
+
+            alert("Este é o maior numero: " + num1);
+        } 
+        else if(num2 > num1 && num2 > num3 && num2 > num4){
+
+            alert("Este e o maior numero " + num2)
+
+        }
+        else if(num3 > num1 && num3 > num2 && num3 > num4){
+
+            alert("Este e o maior numero " + num3);
+
+        }
+
+        else if(num4 > num1 && num4 > num2 && num4 > num3){
+
+            alert("Este e o maior numero " + num4);
+
+        }
+        */
+
+        //Exercicio 2.7 =  Leia 6 números. Some apenas os valores menores que 72. Exiba a soma e todos os valores informados.
 
         let num1 = parseFloat(prompt("Escreva um numero: "));
         let num2 = parseFloat(prompt("Escreva um numero: "));
@@ -74,15 +122,38 @@
         let num5 = parseFloat(prompt("Escreva um numero: "));
         let num6 = parseFloat(prompt("Escreva um numero: "));
 
-        let resultado = parseFloat;
+        let resultado = 0;
 
-        resultado = (num1 + num2 + num3 + num4 + num5 + num6)/6
-        alert(resultado);
+        if (num1 < 72) {
+            resultado += num1;
+        }
+        if (num2 < 72) {
+            resultado += num2;
+        }
+        if (num3 < 72) {
+            resultado += num3;
+        }
+        if (num4 < 72) {
+            resultado += num4;
+        }
+        if (num5 < 72) {
+            resultado += num5;
+        }
+        if (num6 < 72) {
+            resultado += num6;
+        }
+
+        alert("Os numeros informados foram: " + num1 + " " +  num2 + " " + num3 +" " + num4 +" " +num5 +" " + num6)
+
+        alert("O resultado eh " + resultado);
+
 
 
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>

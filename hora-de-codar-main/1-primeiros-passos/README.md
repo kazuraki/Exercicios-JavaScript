@@ -23,19 +23,19 @@ Agora é hora de praticar com foco e disciplina. Faça com calma, teste bastante
 
 Nesta etapa, você vai praticar os fundamentos: criar variáveis, receber dados e exibir resultados.
 
-1.1. Crie uma variável chamada `nome_do_carro`, atribua o valor `"Fusca"` e exiba esse valor na tela.
+1.1. Crie uma variável chamada `nome_do_carro`, atribua o valor `"Fusca"` e exiba esse valor na tela.[x]
 
-1.2. Peça ao usuário que informe o nome e exiba a mensagem: `Olá, [NomeDoUsuario]`.
+1.2. Peça ao usuário que informe o nome e exiba a mensagem: `Olá, [NomeDoUsuario]`.[x]
 
-1.3. Peça ao usuário nome e idade e exiba: `Olá, [NomeDoUsuario], sua idade é [idade]`.
+1.3. Peça ao usuário nome e idade e exiba: `Olá, [NomeDoUsuario], sua idade é [idade]`.[x]
 
 ### Desafios extras (opcionais)
 
-- Exiba o nome também em letras maiúsculas.
+- Exiba o nome também em letras maiúsculas.[x]
   
-- Mostre quantos caracteres o nome digitado possui.
+- Mostre quantos caracteres o nome digitado possui.[x]
   
-- Personalize a saudação com uma frase motivacional curta.
+- Personalize a saudação com uma frase motivacional curta.[x]
 
 > **Dominar o básico acelera tudo que vem depois.**
 
@@ -44,19 +44,19 @@ Nesta etapa, você vai praticar os fundamentos: criar variáveis, receber dados 
 
 Nesta etapa, você vai ensinar o programa a tomar decisões com base em regras.
 
-2.1. Leia dois números e mostre o maior deles.
+2.1. Leia dois números e mostre o maior deles.[x]
 
-2.2. Leia um valor e diga se ele é positivo, negativo ou zero.
+2.2. Leia um valor e diga se ele é positivo, negativo ou zero.[x]
 
-2.3. Leia 3 valores diferentes e mostre o maior.
+2.3. Leia 3 valores diferentes e mostre o maior.[x]
 
-2.4. Leia 3 valores diferentes e mostre a soma dos 2 maiores.
+2.4. Leia 3 valores diferentes e mostre a soma dos 2 maiores.[x]
 
-2.5. Leia 6 valores, exiba todos e calcule a média aritmética.
+2.5. Leia 6 valores, exiba todos e calcule a média aritmética.[x]
 
-2.6. Leia 4 valores diferentes e informe apenas o primeiro, o último e o maior deles.
+2.6. Leia 4 valores diferentes e informe apenas o primeiro, o último e o maior deles.[x]
 
-2.7. Leia 6 números. Some apenas os valores menores que 72. Exiba a soma e todos os valores informados.
+2.7. Leia 6 números. Some apenas os valores menores que 72. Exiba a soma e todos os valores informados.[x]
 
 2.8. Leia 4 números, aceitando apenas valores maiores que 0 e menores que 10. Calcule a média e:
 
