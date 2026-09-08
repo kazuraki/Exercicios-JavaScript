@@ -114,7 +114,7 @@
         */
 
         //Exercicio 2.7 =  Leia 6 números. Some apenas os valores menores que 72. Exiba a soma e todos os valores informados.
-
+        /*
         let num1 = parseFloat(prompt("Escreva um numero: "));
         let num2 = parseFloat(prompt("Escreva um numero: "));
         let num3 = parseFloat(prompt("Escreva um numero: "));
@@ -146,7 +146,36 @@
         alert("Os numeros informados foram: " + num1 + " " +  num2 + " " + num3 +" " + num4 +" " +num5 +" " + num6)
 
         alert("O resultado eh " + resultado);
+        */
 
+        let num1 = parseFloat(prompt("Escreva sua primeira nota: "));
+        let num2 = parseFloat(prompt("Escreva sua segunda nota: "));
+        let num3 = parseFloat(prompt("Escreva sua terceira nota: "));
+        let num4 = parseFloat(prompt("Escreva sua quarta nota: "))
+
+        let nota = 0;
+
+        if(num1 < 0 || num2 < 0 || num3 < 0 || num4 < 0){
+
+            alert("Nota invalida");
+            
+        }
+
+        else{
+
+            nota = (num1 + num2 + num3 + num4)/4
+
+            if(nota >= 5){
+
+                alert("Voce passou");
+            }
+            else{
+
+                alert("Voce nao passou");
+            }
+
+
+        }
 
 
     </script>
