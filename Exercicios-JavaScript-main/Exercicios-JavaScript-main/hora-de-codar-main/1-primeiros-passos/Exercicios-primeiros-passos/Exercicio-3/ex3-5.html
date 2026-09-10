@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //Exercicio 3.5. Leia 2 notas de um aluno, calcule a média final e considere aprovação com nota 9,5. Em seguida, pergunte: `Calcular a média de outro aluno? (S/N)`. Se a resposta for `S`, repita; caso contrário, encerre e mostre a quantidade de alunos aprovados.
+
+        let aprovado = 0;
+        let resposta = "S";
+
+        while(resposta == "S"){
+            
+        let nota1 = parseFloat(prompt("Escreva a primeira nota: "));
+        let nota2 = parseFloat(prompt("Escreva a segunda nota: "));
+
+        let media = (nota1 + nota2)/2;
+
+        if(media < 9.5){
+            alert("Aluno reprovado")
+            
+        }
+        else{
+            alert("Aluno aprovado: "  + media);
+            aprovado++;
+        }
+        
+        resposta = prompt("Deseja continuar: (S/N)").toUpperCase();
+
+            while(resposta != "S" && resposta != "N" ){
+                resposta= prompt("Resposta invalida, digite novamente").toUpperCase();
+            }
+        
+
+        }
+
+        
+        
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

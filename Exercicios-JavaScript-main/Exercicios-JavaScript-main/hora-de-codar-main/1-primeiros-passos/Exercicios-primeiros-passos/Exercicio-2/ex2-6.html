@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Exercicio 2.6 = Leia 4 valores diferentes e informe apenas o primeiro, o último e o maior deles.
+        
+        let num1 = parseInt(prompt("Escreva um numero: "));
+        let num2 = parseInt(prompt("Escreva um numero: "));
+        let num3 = parseInt(prompt("Escreva um numero: "));
+        let num4 = parseInt(prompt("Escreva um numero: "));
+
+        alert("O numero " + num1 + " foi seu primeiro digitado");
+        alert("O numero " + num4 + " foi seu ultimo digitado");
+
+        if(num1 > num2 && num1 > num3 && num1 > num4){
+
+            alert("Este é o maior numero: " + num1);
+        } 
+        else if(num2 > num1 && num2 > num3 && num2 > num4){
+
+            alert("Este e o maior numero " + num2)
+
+        }
+        else if(num3 > num1 && num3 > num2 && num3 > num4){
+
+            alert("Este e o maior numero " + num3);
+
+        }
+
+        else if(num4 > num1 && num4 > num2 && num4 > num3){
+
+            alert("Este e o maior numero " + num4);
+
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

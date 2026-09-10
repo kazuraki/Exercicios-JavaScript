@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Exercicio 3.2 = Leia dois valores. Enquanto o segundo valor for menor ou igual a zero, peça novamente esse mesmo valor. Ao final, mostre a divisão do primeiro pelo segundo.
+        
+        let n1 = parseFloat(prompt("Escreva um numero: "));
+        let n2 = parseFloat(prompt("Escreva um numero: "));
+
+        while (n2 <= 0 ){
+            n2 = prompt("Escreva outro numero: ");
+        }
+
+        let resultado = n1/n2;
+
+        alert("O resultado é: " + resultado);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

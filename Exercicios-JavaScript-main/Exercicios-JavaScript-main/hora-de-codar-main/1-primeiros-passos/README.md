@@ -83,21 +83,21 @@ Nesta etapa, você vai repetir tarefas de forma inteligente com `for` e `while`.
 
 3.3. Calcule e exiba a média aritmética dos números inteiros de 15 a 100 (inclusive).[x]
 
-3.4. Leia dois inteiros (sendo o primeiro menor que o segundo) e calcule a média desses números e de todos os inteiros entre eles.
+3.4. Leia dois inteiros (sendo o primeiro menor que o segundo) e calcule a média desses números e de todos os inteiros entre eles.[x]
 
-3.5. Leia 2 notas de um aluno, calcule a média final e considere aprovação com nota 9,5. Em seguida, pergunte: `Calcular a média de outro aluno? (S/N)`. Se a resposta for `S`, repita; caso contrário, encerre e mostre a quantidade de alunos aprovados.
+3.5. Leia 2 notas de um aluno, calcule a média final e considere aprovação com nota 9,5. Em seguida, pergunte: `Calcular a média de outro aluno? (S/N)`. Se a resposta for `S`, repita; caso contrário, encerre e mostre a quantidade de alunos aprovados.[x]
 
-3.6. Leia 6 notas válidas (de 0 a 10), calcule e exiba a média simples.
+3.6. Leia 6 notas válidas (de 0 a 10), calcule e exiba a média simples.[x]
 
-3.7. Leia um valor `N` (N > 0) e imprima todos os inteiros de 1 até `N`.
+3.7. Leia um valor `N` (N > 0) e imprima todos os inteiros de 1 até `N`.[x]
 
-3.8. Imprima os 10 primeiros números inteiros maiores que 100.
+3.8. Imprima os 10 primeiros números inteiros maiores que 100.[x]
 
-3.9. Leia 10 valores e informe quantos estão no intervalo de 24 a 42 (inclusive) e quantos estão fora.
+3.9. Leia 10 valores e informe quantos estão no intervalo de 24 a 42 (inclusive) e quantos estão fora.[x]
 
 ### Desafios extras (opcionais)
 
-- Permita ao usuário escolher o valor inicial da contagem regressiva.
+- Permita ao usuário escolher o valor inicial da contagem regressiva.[x]
 - Ao calcular médias, exiba também soma total e quantidade de valores.
 - No exercício 10, exiba os números que ficaram dentro e fora do intervalo.
 

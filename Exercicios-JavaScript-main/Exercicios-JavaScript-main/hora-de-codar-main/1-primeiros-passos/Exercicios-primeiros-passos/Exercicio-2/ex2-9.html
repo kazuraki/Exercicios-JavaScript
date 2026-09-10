@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        //Exercicio 2.9. Leia o ano de nascimento e informe se a pessoa pode votar no ano atual (sem considerar o mês).
+        
+        let anoN = parseInt(prompt("Escreva o ano de nascimento: "));
+
+        let anoV = parseInt(prompt("Escreva o ano: ")); 
+
+        let voto = 0;
+        
+        voto = anoV - anoN;
+        let idade = voto;
+
+        if (voto > 18){
+            alert("Esta apto a votar");
+            alert("Voce tem: " + idade)
+        }
+
+        else{
+            alert("Nao esta apto a votar");
+            alert("Voce tem: " + idade)
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

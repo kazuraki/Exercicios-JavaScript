@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Exercicio 2.3 = Escreva 3 numeros e exiba o maior
+        
+        let num1 = parseInt(prompt("Escreva numero: "));
+        let num2 = parseInt(prompt("Escreva numero: "));
+        let num3 = parseInt(prompt("Escreva numero: "));    
+        
+        let min = Math.min(num1, num2, num3); 
+
+        if (num1 > num2 && num1 > num3 ){
+            alert("O maior numero é: "+ num1);
+            alert("O menor numero é " + min);
+        }   
+        else if(num2 > num1 && num2 > num3 ){
+            alert("O maior numero é: "+num2);
+            alert("O menor numero é " +min);
+        } 
+        else{
+            alert("O maior numero é: "+num3);
+            alert("O menor numero é " + min);
+        } 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

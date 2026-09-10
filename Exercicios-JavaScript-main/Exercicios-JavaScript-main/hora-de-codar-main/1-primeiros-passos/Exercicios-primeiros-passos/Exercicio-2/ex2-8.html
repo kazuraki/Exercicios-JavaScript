@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Exercicio 2.8. Leia 4 números, aceitando apenas valores maiores que 0 e menores que 10. Calcule a média e:
+        //se média > 5, exiba "Você passou no teste";
+        //caso contrário, exiba "Tente novamente".
+
+        //Usando o if
+        let nota1= parseFloat(prompt("Escreva sua nota: "));
+        let nota2= parseFloat(prompt("Escreva sua nota: "));
+        let nota3= parseFloat(prompt("Escreva sua nota: "));
+        let nota4= parseFloat(prompt("Escreva sua nota: "));
+
+        if(nota1 < 0 ){
+            alert("nota invalida");
+        }
+        else if(nota2 < 0){
+            alert("nota invalida");
+        }
+        else if(nota3 < 0){
+            alert("nota invalida");
+        }
+        else if(nota4 < 0){
+            alert("nota invalida");
+        }
+
+        let notaFinal = (nota1+ nota2 + nota3 + nota4)/4;
+
+        alert(notaFinal);
+
+
+        //Usando comando for
+        let somatoria = 0
+        for (let i = 0; i <= 3; i++) {
+            let num = parseInt(prompt("Escreva sua nota: "));
+
+            somatoria += num;
+            if (num < 0) {
+                alert("Error");
+                break
+            }
+        }
+
+        let media = somatoria / 4
+
+        if (media > 5) {
+            alert("Voce passou");
+        }
+        else {
+            alert("Voce reprovou");
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

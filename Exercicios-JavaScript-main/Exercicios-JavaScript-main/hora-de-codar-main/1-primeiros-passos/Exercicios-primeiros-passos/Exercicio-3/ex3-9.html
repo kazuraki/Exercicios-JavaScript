@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Exercicio 3.9 = Leia 10 valores e informe quantos estão no intervalo de 24 a 42 (inclusive) e quantos estão fora.
+
+        let interv =0;
+        let resto = 0;
+        for(let i = 0; i < 10; i++ ){
+
+            let n = parseInt(prompt("Insira um numero: "))
+
+            if(n >= 24 && n <= 42 ){
+                interv++
+            }
+            else{
+                resto++
+            }
+
+        }
+
+        console.log("Tem " + interv + " no intervalo");
+        console.log("Tem " + resto + " que eh resto");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
