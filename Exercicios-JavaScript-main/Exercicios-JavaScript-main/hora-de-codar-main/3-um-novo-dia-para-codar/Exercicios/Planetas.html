@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let planetas  = ["mercúrio", "vênus", "terra", "marte", "júpiter", "saturno", "urano", "netuno" , "plutão"]
+
+        function planetaUsu(){
+            
+                alert("Planetas disponiveis: \n" + planetas.join(" , "))
+
+            let nome = prompt("Escreva seu nome: ");
+            
+        
+            while(true){
+
+                let resposta = prompt("Escreva um planeta: ");
+            if (resposta === null){
+
+                break;
+            }
+            if(resposta.toUpperCase() === 'PARE'){
+                alert("Parando programa...")
+                break;
+            }
+            if(resposta=== '' || resposta.trim() === " "){
+                alert("O nome nao pode estar vazio");
+                continue;
+            }
+
+            if(planetas.includes(resposta.trim().toLowerCase())){
+                alert("O " + nome + " digitou " + resposta.trim())
+            }
+            else{
+                alert("nenhum planeta encontrado")
+            }
+
+            
+        }
+        
+    }
+    planetaUsu();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

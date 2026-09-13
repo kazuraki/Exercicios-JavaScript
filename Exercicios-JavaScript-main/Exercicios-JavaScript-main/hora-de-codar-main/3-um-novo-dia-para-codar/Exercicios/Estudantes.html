@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let estudantes = [];
+
+        function adicionarEstudante(){
+            const parar = "PARE";
+            
+
+            while (true){
+
+            const nome = prompt("Escreva o nome do estudante: ");
+
+            if (nome === null){
+
+                break;
+            }
+            if(nome.toUpperCase() === 'PARE'){
+                alert("Parando programa...")
+                break;
+            }
+            if(nome === '' || nome.trim() === " "){
+                alert("O nome nao pode estar vazio");
+                continue;
+            }
+
+            //Verificacao de apenas caracteres
+            const apenasLetras = /^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÊÍÏÓÔÕÖÚÇÑ\s]+$/;
+                if (!apenasLetras.test(nome.trim())) {
+                    alert("O nome deve conter apenas letras!");
+                    continue;
+                }
+
+            estudantes.push(nome.trim())
+        }
+        if(estudantes.length > 0){
+        for( let i = 0 ; i < estudantes.length; i++){
+            
+            alert(`Quantidade de estudantes cadastrados: ${estudantes.length}\n\nEstudante ${i + 1}:\n${estudantes[i]}`)
+
+        }
+    } else{
+        alert("nenhum estudante encontrado")
+    }
+}   
+        adicionarEstudante();
+    
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
