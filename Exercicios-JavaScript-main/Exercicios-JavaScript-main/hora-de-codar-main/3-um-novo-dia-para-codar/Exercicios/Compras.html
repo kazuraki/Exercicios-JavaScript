@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        let frutas = ["banana", "maca", "mamao"];
+        let itensComprados = [];
+
+        function listaCompras() {
+
+            while (true) {
+
+                alert("Frutas disponiveis: \n" + frutas.join(" , "))
+
+                let lista = prompt("Escreva algum item da lista: ");
+
+
+                if (lista === null) {
+                    break;
+                }
+
+                if (lista.toUpperCase() === 'PARE') {
+                    alert("Frutas ainda disponiveis: " + frutas.join(" , "))
+                    alert("Frutas compradas: \n" + itensComprados.join(" , "))
+                    break;
+                }
+                if (lista === '') {
+                    alert("Digite uma fruta valida");
+                    continue;
+                }
+                let f = lista.trim().toLowerCase();
+                if (frutas.includes(f)) {
+                    let indice = frutas.indexOf(f);
+
+                    frutas.splice(indice, 1)
+
+                    alert("Fruta removida com sucesso")
+                    itensComprados.push(lista.trim());
+                    
+
+                    if (!frutas.length) {
+                        alert("Lista de compras finalizada")
+                        alert("Frutas compradas: \n" + itensComprados.join(" , "))
+                        break;
+                    }
+                    continue;
+
+                } else {
+                    alert("Fruta indisponível no nosso mercado")
+                }
+
+            }
+
+        }
+
+        listaCompras();
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

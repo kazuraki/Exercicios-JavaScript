@@ -7,17 +7,17 @@ Hoje vamos dar os primeiros passos no fascinante mundo das estruturas de dados! 
 Crie um programa onde o usuário possa cadastrar estudantes sem limites, e, em seguida, Se o usuário digitar "PARE" o programa deve exibir a quantidade de estudantes cadastrados e a lista com cada um deles.[x]
 
 ### 2 - Planetas
-Exiba uma lista de planetas do sistema solar ("Mercúrio", "Vênus", "Terra", "Marte", "Júpiter", "Saturno", "Urano", "Netuno" e "Plutão") para o usuário. Em seguida, peça ao usuário para digitar o nome de um planeta. Verifique se o planeta que o usuário informou está na lista e informe ao usuário.
+Exiba uma lista de planetas do sistema solar ("Mercúrio", "Vênus", "Terra", "Marte", "Júpiter", "Saturno", "Urano", "Netuno" e "Plutão") para o usuário. Em seguida, peça ao usuário para digitar o nome de um planeta. Verifique se o planeta que o usuário informou está na lista e informe ao usuário.[x]
 
 ### 3 - Compras
 Vamos criar uma lista de compras.
 
-- Crie uma array de frutas, exiba-a ao usuário e, em seguida, peça ao usuário para digitar o nome de uma das frutas.
-- Caso a fruta esteja no array, remova-a e exiba a mensagem "Fruta foi retirada da lista".
-Peça novamente para o usuário digitar o nome de uma fruta para ser removida.
-- Sempre que o usuário procurar por uma fruta que não está no array exiba a mensagem "Fruta indisponível no nosso mercado".
-- Quando o usuário digitar "PARE", exiba a lista de frutas restantes.
-- Quando o array não possuir mais itens dentro de si, escreva "Lista de compras finalizada".
+- Crie uma array de frutas, exiba-a ao usuário e, em seguida, peça ao usuário para digitar o nome de uma das frutas.[x]
+- Caso a fruta esteja no array, remova-a e exiba a mensagem "Fruta foi retirada da lista".[x]
+Peça novamente para o usuário digitar o nome de uma fruta para ser removida.[x]
+- Sempre que o usuário procurar por uma fruta que não está no array exiba a mensagem "Fruta indisponível no nosso mercado".[x]
+- Quando o usuário digitar "PARE", exiba a lista de frutas restantes.[x]
+- Quando o array não possuir mais itens dentro de si, escreva "Lista de compras finalizada".[x]
 
 
 ### 4 - Agenda de Contatos (Exemplo pronto)
