@@ -21,7 +21,7 @@ Linguagens permitidas:
 
 ## 2) Objetivos de Aprendizagem
 
-- Decompor um sistema em módulos coesos.
+- Decompor um sistema em módulos coesos.[x]
 - Projetar fluxo de navegação com menu e retorno ao contexto principal.
 - Implementar validações robustas de entrada e tratamento de erro.
 - Trabalhar com estruturas de dados em memória.
@@ -31,7 +31,7 @@ Linguagens permitidas:
 
 ## 3) Requisitos Globais do Sistema
 
-## 3.1 Identidade, autenticação e sessão
+## 3.1 Identidade, autenticação e sessão[x]
 
 1. Defina o nome do hotel e use-o no lugar de `{Hotel}` em todas as mensagens.
 2. Ao abrir o sistema, exiba:
@@ -43,7 +43,7 @@ Linguagens permitidas:
 6. Com login válido, exiba:
    - `Bem-vindo ao Hotel {Hotel}, {Nome}. É um imenso prazer ter você por aqui!`
 
-## 3.2 Menu principal e organização
+## 3.2 Menu principal e organização[x]
 
 - Todas as opções inválidas devem ser tratadas por função dedicada de erro.
 - Ao finalizar qualquer subprograma, retornar automaticamente ao menu principal.
@@ -62,8 +62,8 @@ Menu mínimo:
 
 ## 3.3 Regras de implementação
 
-- O hotel possui **20 quartos**, inicialmente livres.
-- Utilize funções/métodos separados por responsabilidade.
+- O hotel possui **20 quartos**, inicialmente livres.[x]
+- Utilize funções/métodos separados por responsabilidade.[x]
 - Não usar variáveis globais sem justificativa.
 - Padronizar mensagens e formatação monetária.
 - Estruturas em memória são suficientes (sem banco).
@@ -76,11 +76,11 @@ Menu mínimo:
 
 Desenvolva um programa que: 
 
-1) Receba o valor de uma diária no hotel e a quantidade de dias de hospedagem. Valide as informações, ou seja, impeça que o usuário informe dados inválidos, de maneira que o valor da diária não seja negativo e que a quantidade de dias não seja nem negativa, nem maior que 30. 
+1) Receba o valor de uma diária no hotel e a quantidade de dias de hospedagem. Valide as informações, ou seja, impeça que o usuário informe dados inválidos, de maneira que o valor da diária não seja negativo e que a quantidade de dias não seja nem negativa, nem maior que 30. [x]
 
-Em caso de informação inválida escreva na tela “Valor Inválido” e volte ao início do programa. 
+Em caso de informação inválida escreva na tela “Valor Inválido” e volte ao início do programa. [x]
 
-2) Em seguida, caso o usuário tenha informado um valor correto, pergunte o nome do hóspede. 
+2) Em seguida, caso o usuário tenha informado um valor correto, pergunte o nome do hóspede. [x]
 
 3) Agora será informado o número do quarto (de 1 a 20); A informação deve ser armazenada e se outro hóspede tentar ocupar um quarto já ocupado o sistema informará “Quarto já está ocupado”. No caso de um quarto ocupado, deve ser oferecido ao usuário a escolha de outro quarto. 
 

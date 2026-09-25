@@ -2,30 +2,14 @@
 
 <head>
 
-	<script>
-	
+	<script type = "module">
+		import inicio from "./inicio.js"
+		import reservas from "./reservas.js"
 
-		function inicio() {
+		const nomeHotel = "Hotel Carvalho"
 
-			var escolha = parseInt(prompt('Selecione uma opção 1.) Reserva de Quartos 2.) Cadastro de Hóspedes 3.) Abastecimento de Carros 4.) Sair'));
+		inicio(nomeHotel);
 
-			if (escolha === 1) {
-				reserva_quartos();
-			} else if (escolha === 2) {
-				cadastro_hospedes();
-			} else if (escolha === 3) {
-				abastecer_carros();
-			} else if (escolha === 4) {
-				sair();
-			} else {
-				erro();
-			}
-		}		
-
-		function reserva_quartos() {
-			alert('HOTEL {NOME DO HOTEL} - RESERVA DE QUARTOS');
-			inicio();
-		}
 
 		function cadastro_hospedes() {
 			alert('HOTEL {NOME DO HOTEL} - CADASTRO DE HÓSPEDES');
@@ -45,15 +29,15 @@
 		function sair() {
 			var confirma = confirm('Você deseja sair?');
 			if (confirma) {
+				alert("Muito obrigado e até logo, " + nomeUsu);
 				window.close();
 			} else {
 				inicio();
 			}
 		}
 
-		
-		
 		inicio();
+
 	</script>
 </head>
 
