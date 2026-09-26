@@ -2,6 +2,7 @@ import inicio from "./inicio.js"
 import menu from "./menu.js";
 import { quartosDisp } from "./inicio.js"
 import erro from "./erro.js"
+import { sair } from "./cadastroHospedes.js";
 
 
 export default function reservas() {
@@ -22,8 +23,6 @@ export default function reservas() {
     }
 
     let resposta = "S";
-
-    while (resposta === "S") {
 
         alert("Tipos de quartos: (S) Standart | (E) Executivo | (L) Luxo");
         let tpQuarto = prompt("Selecione o tipo de quarto: ").toUpperCase();
@@ -93,16 +92,17 @@ export default function reservas() {
 
             alert("Reserva feita com sucesso!")
 
+            //localiza o indice cadastrado pela variavel e retira do array
             let indice = quartosDisp.indexOf(numQuarto)
             quartosDisp.splice(indice, 1)
 
+            sair();
+
         }
+
         else {
             alert("Reserva não confirmada.")
         }
 
 
     }
-
-
-}

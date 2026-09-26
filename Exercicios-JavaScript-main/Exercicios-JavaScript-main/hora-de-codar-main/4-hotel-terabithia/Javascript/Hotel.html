@@ -4,39 +4,14 @@
 
 	<script type = "module">
 		import inicio from "./inicio.js"
+		import menu from "./menu.js"
 		import reservas from "./reservas.js"
 
-		const nomeHotel = "Hotel Carvalho"
+		export const nomeHotel = "Hotel Carvalho"
 
+		//necessario que isso precise estar solto para que rode como prioridade
 		inicio(nomeHotel);
 
-
-		function cadastro_hospedes() {
-			alert('HOTEL {NOME DO HOTEL} - CADASTRO DE HÓSPEDES');
-			inicio();
-		}
-
-		function abastecer_carros() {
-			alert('HOTEL {NOME DO HOTEL} - ABASTECER');
-			inicio();
-		}
-
-		function erro() {
-			alert('Por favor, informe um número entre 1 e 4');
-			inicio();
-		}
-
-		function sair() {
-			var confirma = confirm('Você deseja sair?');
-			if (confirma) {
-				alert("Muito obrigado e até logo, " + nomeUsu);
-				window.close();
-			} else {
-				inicio();
-			}
-		}
-
-		inicio();
 
 	</script>
 </head>
