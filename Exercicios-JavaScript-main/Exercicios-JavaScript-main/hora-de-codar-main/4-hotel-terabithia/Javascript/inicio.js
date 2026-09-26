@@ -1,5 +1,6 @@
 import menu from "./menu.js"
 import reservas from "./reservas.js";
+import erro from "./erro.js"
 
 
 export let quartosDisp = [];

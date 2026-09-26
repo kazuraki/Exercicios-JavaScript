@@ -1,4 +1,8 @@
 import reservas from "./reservas.js";
+import erro from "./erro.js";
+//Esse jeito permite varios imports de funcoes do mesmo arquivo
+import { sistema_cadastrar_hospedes, cadastro_hospedes, pesquisar_hospedes, erro_pesquisar_hospedes } from "./cadastroHospedes.js"
+
 export default function menu(escolha){
     
 
