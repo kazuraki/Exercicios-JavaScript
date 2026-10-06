@@ -4,7 +4,7 @@ var lista_hospedes = [];
 
 export function sistema_cadastrar_hospedes() {
 
-    var escolha_hospedes = parseInt(prompt('Cadastro de Hóspedes\n\n Selecione uma opção: \n1. Cadastrar \n2. Pesquisar \n3. Sair'));
+    var escolha_hospedes = parseInt(prompt("Cadastro de Hóspedes\n Selecione uma opção: \n1-Cadastrar \n2-Pesquisar exato \n3-Pesquisar \nprefixo \n4-Listar \n5-Atualizar \n6-Remover \n7-Voltar"));
 
     switch (escolha_hospedes) {
         case 1:
@@ -14,6 +14,9 @@ export function sistema_cadastrar_hospedes() {
             pesquisar_hospedes();
             break;
         case 3:
+            listar_hospedes();
+            break;
+        case 4:
             sair();
             break;
         default:
@@ -23,7 +26,7 @@ export function sistema_cadastrar_hospedes() {
 
 }
 
-export function cadastrar_hospedes() {
+ function cadastrar_hospedes() {
 
     if (lista_hospedes.length >= 15) {
         alert("Numero máximo de hóspedes cadastrados.");
@@ -38,7 +41,15 @@ export function cadastrar_hospedes() {
     sistema_cadastrar_hospedes();
 }
 
-export function pesquisar_hospedes() {
+function listar_hospedes(){
+
+    
+    alert("Hospedes cadastrados: "+ i + " " + lista_hospedes.join(" , "))
+    sistema_cadastrar_hospedes();
+    
+}
+
+ function pesquisar_hospedes() {
     var nome_hospede = prompt('Por favor, informe o nome da(o) hóspede para pesquisa:');
 
     if (lista_hospedes.includes(nome_hospede)) {
@@ -51,7 +62,7 @@ export function pesquisar_hospedes() {
     sistema_cadastrar_hospedes()
 }
 
-export function erro_pesquisar_hospedes() {
+ function erro_pesquisar_hospedes() {
     alert('Por favor, informe um número entre 1 e 3');
     sistema_cadastrar_hospedes();
 }

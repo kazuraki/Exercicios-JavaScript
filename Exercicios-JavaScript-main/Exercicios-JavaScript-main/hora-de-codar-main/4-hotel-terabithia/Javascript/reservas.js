@@ -1,5 +1,4 @@
 import inicio from "./inicio.js"
-import menu from "./menu.js";
 import { quartosDisp } from "./inicio.js"
 import erro from "./erro.js"
 import { sair } from "./cadastroHospedes.js";

@@ -39,6 +39,6 @@ export default function inicio(nomeHotel) {
 		do{
 			var escolha = parseInt(prompt('Selecione uma opção 1.) Reserva de Quartos 2.) Cadastro de Hóspedes 3.) Abastecimento de Carros 4.) Sair'));
 			menu(escolha);
-		}while(escolha !== 4);
-		
+		}while(escolha !== 7);
+
 		}

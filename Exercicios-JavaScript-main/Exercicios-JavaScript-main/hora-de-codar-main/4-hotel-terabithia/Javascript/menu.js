@@ -1,7 +1,9 @@
 import reservas from "./reservas.js";
 import erro from "./erro.js";
 //Esse jeito permite varios imports de funcoes do mesmo arquivo
-import { sistema_cadastrar_hospedes, cadastrar_hospedes, pesquisar_hospedes, erro_pesquisar_hospedes }  from "./cadastroHospedes.js"
+import sistema_cadastrar_hospedes from "./cadastroHospedes.js"
+import eventos from "eventos.js"
+import ar_condicionado from "./arCondicionado.js";
 
 export default function menu(escolha){
     
@@ -20,7 +22,7 @@ export default function menu(escolha){
 				break;
 
 			case 4:
-				Ar_Condicionado();
+				ar_condicionado();
 				break;
 
 			case 5:
@@ -37,6 +39,7 @@ export default function menu(escolha){
 				break;
 
 			default:
+
 				erro();
 		}
 
