@@ -1,8 +1,6 @@
-import menu from "./menu.js";
+export default function hospedes() {
 
-var lista_hospedes = [];
-
-export function sistema_cadastrar_hospedes() {
+    var lista_hospedes = [];
 
     var escolha_hospedes = parseInt(prompt("Cadastro de Hóspedes\n Selecione uma opção: \n1-Cadastrar \n2-Pesquisar exato \n3-Pesquisar \nprefixo \n4-Listar \n5-Atualizar \n6-Remover \n7-Voltar"));
 

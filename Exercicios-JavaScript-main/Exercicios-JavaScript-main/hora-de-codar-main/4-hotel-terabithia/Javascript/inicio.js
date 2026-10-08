@@ -37,7 +37,19 @@ export default function inicio(nomeHotel) {
 			alert("Bem vindo ao " + nomeHotel + " , " + nomeUsu + ". É um imenso prazer ter você por aqui!");
 
 		do{
-			var escolha = parseInt(prompt('Selecione uma opção 1.) Reserva de Quartos 2.) Cadastro de Hóspedes 3.) Abastecimento de Carros 4.) Sair'));
+			var escolha = prompt(
+						"====================================\n" +
+						"      HOTEL TERABITHIA — MENU       \n" +
+						"====================================\n" +
+						"1. Reservas de Quartos\n" +
+						"2. Cadastro de Hóspedes\n" +
+						"3. Gestão de Eventos\n" +
+						"4. Manutenção (Ar-Condicionado)\n" +
+						"5. Abastecimento de Veículos\n" +
+						"6. Relatórios Operacionais\n" +
+						"0. Sair\n\n" +
+						"Escolha uma opção:"
+			);
 			menu(escolha);
 		}while(escolha !== 7);
 
