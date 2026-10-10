@@ -7,6 +7,7 @@ export default function abastecer_carros(){
     let opcaoStark;
     let totalWayne = 0;
     let totalStark = 0;
+    let me
 
     let postoWayneA = parseFloat(prompt("Digite o preco do alcool: "));
     let postoWayneG = parseFloat(prompt("Digite o preco da gasolina: "));
@@ -52,6 +53,7 @@ export default function abastecer_carros(){
 
     if (totalWayne < totalStark) {
         alert("O posto mais em conta é o Wayne Oil.");
+        
     } else if (totalStark < totalWayne) {
         alert("O posto mais em conta é o Stark Petrol.");
     } else {

@@ -1,71 +1,89 @@
+import { dadosSistema } from "./dados.js";
+import erro from "./erro.js";
+
 export default function hospedes() {
+    let continuar = true;
 
-    var lista_hospedes = [];
+    while (continuar) {
+        let escolha_hospedes = parseInt(
+            prompt(
+                "Cadastro de Hóspedes\nSelecione uma opção:\n" +
+                "1 - Cadastrar\n" +
+                "2 - Pesquisar exato\n" +
+                "3 - Listar\n" +
+                "4 - Voltar"
+            )
+        );
 
-    var escolha_hospedes = parseInt(prompt("Cadastro de Hóspedes\n Selecione uma opção: \n1-Cadastrar \n2-Pesquisar exato \n3-Pesquisar \nprefixo \n4-Listar \n5-Atualizar \n6-Remover \n7-Voltar"));
-
-    switch (escolha_hospedes) {
-        case 1:
-            cadastrar_hospedes();
-            break;
-        case 2:
-            pesquisar_hospedes();
-            break;
-        case 3:
-            listar_hospedes();
-            break;
-        case 4:
-            sair();
-            break;
-        default:
-            erro_pesquisar_hospedes();
-
+        switch (escolha_hospedes) {
+            case 1:
+                cadastrar_hospedes();
+                break;
+            case 2:
+                pesquisar_hospedes();
+                break;
+            case 3:
+                listar_hospedes();
+                break;
+            case 4:
+                continuar = false;
+                break;
+            default:
+                erro_pesquisar_hospedes();
+        }
     }
-
 }
 
- function cadastrar_hospedes() {
-
-    if (lista_hospedes.length >= 15) {
-        alert("Numero máximo de hóspedes cadastrados.");
-    } else {
-        var nome_hospede = prompt('Por favor, informe o nome da(o) hóspede:');
-
-        lista_hospedes.push(nome_hospede);
-        console.log(lista_hospedes);
-        alert("Sucesso! Hóspede " + nome_hospede + " foi cadastrada(o) com sucesso!\n");
-    }
-
-    sistema_cadastrar_hospedes();
-}
-
-function listar_hospedes(){
-
+function cadastrar_hospedes() {
     
-    alert("Hospedes cadastrados: "+ i + " " + lista_hospedes.join(" , "))
-    sistema_cadastrar_hospedes();
-    
-}
-
- function pesquisar_hospedes() {
-    var nome_hospede = prompt('Por favor, informe o nome da(o) hóspede para pesquisa:');
-
-    if (lista_hospedes.includes(nome_hospede)) {
-        alert(nome_hospede + ' encontrada(o).')
-
+    if (dadosSistema.listaHospedes.length >= 15) {
+        alert("Número máximo de hóspedes cadastrados (15).");
     } else {
-        alert(nome_hospede + ' não foi encontrada(o).')
-    }
+        let nome_hospede = prompt("Por favor, informe o nome da(o) hóspede:");
 
-    sistema_cadastrar_hospedes()
+        if (nome_hospede && nome_hospede.trim() !== "") {
+            
+            dadosSistema.listaHospedes.push(nome_hospede.trim());
+            
+            dadosSistema.totalHospedes = dadosSistema.listaHospedes.length;
+            dadosSistema.quartosOcupados++; 
+
+            alert("Sucesso! Hóspede " + nome_hospede + " foi cadastrada(o) com sucesso!");
+        } else {
+            alert("Nome inválido!");
+        }
+    }
 }
 
- function erro_pesquisar_hospedes() {
-    alert('Por favor, informe um número entre 1 e 3');
-    sistema_cadastrar_hospedes();
+function listar_hospedes() {
+    if (dadosSistema.listaHospedes.length === 0) {
+        alert("Nenhum hóspede cadastrado até o momento.");
+    } else {
+        let textoLista = "Hóspedes cadastrados:\n";
+        for (let i = 0; i < dadosSistema.listaHospedes.length; i++) {
+            textoLista += (i + 1) + ". " + dadosSistema.listaHospedes[i] + "\n";
+        }
+        alert(textoLista);
+    }
 }
 
-    export function sair(){
-        return;
-    }
+function pesquisar_hospedes() {
+    let nome_hospede = prompt("Por favor, informe o nome da(o) hóspede para pesquisa:");
 
+    if (nome_hospede) {
+        let nomeBuscado = nome_hospede.trim();
+        if (dadosSistema.listaHospedes.includes(nomeBuscado)) {
+            alert(nomeBuscado + " encontrada(o).");
+        } else {
+            alert(nomeBuscado + " não foi encontrada(o).");
+        }
+    }
+}
+
+function erro_pesquisar_hospedes() {
+    alert("Por favor, informe um número válido entre 1 e 4.");
+}
+
+export function sair() {
+    return;
+}

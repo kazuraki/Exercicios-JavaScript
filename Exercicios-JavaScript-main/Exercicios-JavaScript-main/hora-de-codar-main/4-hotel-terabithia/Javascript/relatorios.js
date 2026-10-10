@@ -1,29 +1,27 @@
-import { formatarMoeda, formatarPorcentagem } from "./utils.js";
+import { dadosSistema } from "./dados.js";
 
-export default function gerarRelatorio(dadosSistema) {
-    const totalQuartos = 20;
-    const taxaOcupacao = dadosSistema.quartosOcupados / totalQuartos;
-    const receitaTotal = dadosSistema.receitaHospedagem + dadosSistema.receitaEventos;
+export default function gerarRelatorio() {
+    let totalQuartos = 20;
+    let taxaOcupacao = (dadosSistema.quartosOcupados / totalQuartos) * 100;
+    let receitaTotal = dadosSistema.receitaHospedagem + dadosSistema.receitaEventos;
 
-    const cabecalho = "====================================================\n" +
-                      "         HOTEL TERABITHIA — RELATÓRIO OPERACIONAL    \n" +
-                      "====================================================\n\n";
-
-    const linhaDivisoria = "----------------------------------------------------\n";
-
-    const tabela = 
-        `Métrica                                | Valor       \n` +
-        linhaDivisoria +
-        `Reservas Confirmadas                   | ${String(dadosSistema.reservasConfirmadas).padEnd(12)}\n` +
-        `Quartos Ocupados                       | ${String(dadosSistema.quartosOcupados + "/" + totalQuartos).padEnd(12)}\n` +
-        `Taxa de Ocupação                       | ${formatarPorcentagem(taxaOcupacao).padEnd(12)}\n` +
-        `Hóspedes Cadastrados                   | ${String(dadosSistema.totalHospedes).padEnd(12)}\n` +
-        `Eventos Confirmados                    | ${String(dadosSistema.eventosConfirmados).padEnd(12)}\n` +
-        linhaDivisoria +
-        `Receita - Hospedagem                   | ${formatarMoeda(dadosSistema.receitaHospedagem).padEnd(12)}\n` +
-        `Receita - Eventos                      | ${formatarMoeda(dadosSistema.receitaEventos).padEnd(12)}\n` +
-        `Receita Total                          | ${formatarMoeda(receitaTotal).padEnd(12)}\n` +
-        "====================================================";
-
-    alert(cabecalho + tabela);
+    alert(
+        "====================================\n" +
+        "     HOTEL TERABITHIA — RELATÓRIO   \n" +
+        "====================================\n\n" +
+        "• Reservas confirmadas: " + dadosSistema.reservasConfirmadas + "\n" +
+        "• Quartos ocupados: " + dadosSistema.quartosOcupados + "/" + totalQuartos + " (" + taxaOcupacao.toFixed(1) + "%)\n" +
+        "• Hóspedes cadastrados: " + dadosSistema.totalHospedes + "\n" +
+        "• Eventos confirmados: " + dadosSistema.eventosConfirmados + "\n\n" +
+        "------------------------------------\n" +
+        "• Receita de Hospedagem: R$ " + dadosSistema.receitaHospedagem.toFixed(2) + "\n" +
+        "• Receita de Eventos: R$ " + dadosSistema.receitaEventos.toFixed(2) + "\n" +
+        "------------------------------------\n" +
+        "• MELHOR ORÇAMENTO AR-CONDICIONADO:\n" +
+        "  Empresa: " + (dadosSistema.empresaAr || "Nenhum cadastrado") + "\n" +
+        "  Valor: R$ " + (dadosSistema.melhorOrcamentoAr === Infinity ? "0.00" : dadosSistema.melhorOrcamentoAr.toFixed(2)) + "\n\n" +
+        "====================================\n" +
+        "RECEITA TOTAL DO HOTEL: R$ " + receitaTotal.toFixed(2) + "\n" +
+        "===================================="
+    );
 }

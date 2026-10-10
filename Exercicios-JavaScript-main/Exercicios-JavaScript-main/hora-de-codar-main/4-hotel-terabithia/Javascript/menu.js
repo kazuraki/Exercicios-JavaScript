@@ -24,7 +24,6 @@ export default function menu() {
             "Escolha uma opção:"
         );
 
-        // Caso o usuário feche a caixa do prompt
         if (escolha === null) {
             break;
         }

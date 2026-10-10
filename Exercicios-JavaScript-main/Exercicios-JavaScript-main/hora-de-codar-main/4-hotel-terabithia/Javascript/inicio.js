@@ -18,7 +18,7 @@ export default function inicio(nomeHotel) {
 
 			if (senha != "2678") {
 				for (let i = 0; i < 2; i++) {
-					//faz essa primeira validacao para que o codigo nao entre em loop
+					
 					senha = prompt("Senha invalida, tente novamente: ");
 
 					if (senha === "2678") {
@@ -27,7 +27,7 @@ export default function inicio(nomeHotel) {
 				}
 			}
 
-			//faz essa segunda validacao para que o codigo nao entre em loop
+			
 			if (senha != "2678") {
 				alert("Senha invalida, muitas tentativas validas");
 				inicio();
@@ -36,21 +36,6 @@ export default function inicio(nomeHotel) {
 
 			alert("Bem vindo ao " + nomeHotel + " , " + nomeUsu + ". É um imenso prazer ter você por aqui!");
 
-		do{
-			var escolha = prompt(
-						"====================================\n" +
-						"      HOTEL TERABITHIA — MENU       \n" +
-						"====================================\n" +
-						"1. Reservas de Quartos\n" +
-						"2. Cadastro de Hóspedes\n" +
-						"3. Gestão de Eventos\n" +
-						"4. Manutenção (Ar-Condicionado)\n" +
-						"5. Abastecimento de Veículos\n" +
-						"6. Relatórios Operacionais\n" +
-						"0. Sair\n\n" +
-						"Escolha uma opção:"
-			);
-			menu(escolha);
-		}while(escolha !== 7);
+			menu();
 
 		}
